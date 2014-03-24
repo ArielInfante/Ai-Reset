@@ -4,7 +4,7 @@
 	-Necolas normalize.css(https://github.com/necolas/normalize.css)
 	-Eric Meyer CSS reset(http://meyerweb.com/eric/tools/css/reset/)
 	-Richard Clark's html5 doctor CSS reset(http://html5doctor.com/html-5-reset-stylesheet/)
-	
+
 	I added my own code to work with the way I write my stylesheets and ID/class names.
 	by Ariel Infante @ arielinfantetech.tumblr.com
 
@@ -21,10 +21,10 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -37,7 +37,7 @@ time, mark, audio, video {
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section,
 summary {
 	display: block;
@@ -84,4 +84,14 @@ input, select {
 }
 .fr {
 	float: right;
+}
+.group:after {
+	visibility:hidden;
+	display:block;
+	content:"";
+	clear:both;
+	height:0;
+}
+* html .group,:first-child+html .group {
+	zoom:1;
 }
