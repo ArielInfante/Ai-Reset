@@ -85,6 +85,9 @@ input, select {
 .fr {
 	float: right;
 }
+.display-none {
+	display: none !important;
+}
 .group:after {
 	visibility:hidden;
 	display:block;
